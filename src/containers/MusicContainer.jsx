@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import MusicList from '../components/MusicList';
 
 export class MusicContainer extends Component {
     constructor(props) {
@@ -15,7 +16,7 @@ export class MusicContainer extends Component {
         fetch(url)
             .then(res => res.json())
             .then(data => this.setState({
-                songs: data
+                songs: data.feed.entry
             }))
             .catch(err => console.error);
     }
@@ -23,7 +24,7 @@ export class MusicContainer extends Component {
     render() {
         return (
             <div>
-
+                <MusicList songs={this.state.songs} />
             </div>
         )
     }
