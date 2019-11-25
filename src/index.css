@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.music-list {
+  border: solid black;
+  border-width: 5px;
+  max-width: fit-content;
+  margin: auto;
+  padding: 10px;
+}
