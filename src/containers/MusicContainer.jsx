@@ -23,7 +23,7 @@ export class MusicContainer extends Component {
 
     render() {
         return (
-            <div className="music-list">
+            <div class="music-list">
                 <h2>Top 20 Music Chart</h2>
                 <MusicList songs={this.state.songs} />
             </div>
